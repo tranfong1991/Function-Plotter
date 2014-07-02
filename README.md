@@ -12,7 +12,7 @@ Here is the link to download JFreeChart: http://sourceforge.net/projects/jfreech
 - In some cases, for more accurate results, please add space between operators and operands. For example, (x ^ 2  - 3) instead of (x^2-3). 
 - It can't handle unary negation with x. Please multiply with (-1) instead. For example, (-1)*x instead of -x.
 
-Error handling is still being implemented. Possible errors include: illegal operator, illegal variable name
+Error handling is still being implemented. Possible errors include: illegal operator, illegal variable name.
 
 
 

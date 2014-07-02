@@ -7,8 +7,8 @@ import java.util.Stack;
 public class ExpressionParser {
 	private String infixExpression;
 	private boolean isRadian = false;
-	public ArrayList<String> token;
-	public ArrayList<String> postfixTokens;
+	private ArrayList<String> token;
+	private ArrayList<String> postfixTokens;
 
 	public ExpressionParser() {
 		this.postfixTokens = new ArrayList<String>();

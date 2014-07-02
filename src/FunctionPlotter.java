@@ -116,7 +116,7 @@ public class FunctionPlotter extends JFrame implements ActionListener, ChangeLis
 			siFrame.pFrame = this.pFrame;
 			siFrame.setVisible(true);
 		} else if (source == mniAbout) {
-			JOptionPane.showMessageDialog(this, "Function Plotter v1.0 "
+			JOptionPane.showMessageDialog(this, "Function Plotter v1.0"
 					+ "\nCreated by: Andy Tran " + "\nTexas A&M University"
 					+ "\nGitHub: github.com/tranfong1991"
 					+ "\nLinkedIn: linkedin.com/in/andyntran"

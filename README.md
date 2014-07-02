@@ -1,4 +1,4 @@
-Function-Plotter
+Function Plotter
 ================
 
 Java application that plots and calculates polynomial functions.

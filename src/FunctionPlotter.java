@@ -12,6 +12,13 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class FunctionPlotter extends JFrame implements ActionListener, ChangeListener {
+	private final String ABOUT = "Function Plotter v1.0"
+					+ "\nCreated by: Andy Tran " 
+					+ "\nTexas A&M University"
+					+ "\nGitHub: github.com/tranfong1991"
+					+ "\nLinkedIn: linkedin.com/in/andyntran"
+					+ "\nEmail: andytran@AggieNetwork.com";
+	
 	private JMenuBar mnb = new JMenuBar();
 	private JMenu mnuActions = new JMenu("Actions");
 	private JMenu mnuEdit = new JMenu("Edit");
@@ -106,7 +113,6 @@ public class FunctionPlotter extends JFrame implements ActionListener, ChangeLis
 		}
 		if (source == mniExit) {
 			System.exit(0);
-			;
 		} else if (source == mniClear) {
 			pFrame.reset();
 		} else if (source == mniSetInterval) {
@@ -116,11 +122,7 @@ public class FunctionPlotter extends JFrame implements ActionListener, ChangeLis
 			siFrame.pFrame = this.pFrame;
 			siFrame.setVisible(true);
 		} else if (source == mniAbout) {
-			JOptionPane.showMessageDialog(this, "Function Plotter v1.0"
-					+ "\nCreated by: Andy Tran " + "\nTexas A&M University"
-					+ "\nGitHub: github.com/tranfong1991"
-					+ "\nLinkedIn: linkedin.com/in/andyntran"
-					+ "\nEmail: andytran@AggieNetwork.com", "About",
+			JOptionPane.showMessageDialog(this, ABOUT, "About",
 					JOptionPane.INFORMATION_MESSAGE, imiBig);
 		}
 	}

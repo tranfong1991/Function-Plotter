@@ -5,10 +5,11 @@ import java.awt.Graphics2D;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
 import java.text.DecimalFormat;
-
 import javax.swing.JComponent;
 
 public class Axis extends JComponent {
+	private final Color TICK_LINE_COLOR = Color.BLACK;
+	private final Color DASH_LINE_COLOR = Color.GRAY;
 	// Dash line settings
 	private final float[] DASH = { 2f, 0f, 2f };
 	private final BasicStroke DASH_STROKE = new BasicStroke(1,
@@ -137,7 +138,7 @@ public class Axis extends JComponent {
 	}
 
 	private void drawTickLine() {
-		g2.setColor(Color.BLACK);
+		g2.setColor(TICK_LINE_COLOR);
 
 		for (int i = 0; i < ticks.length; i++) {
 			g2.draw(ticks[i].getTickLine());
@@ -154,7 +155,7 @@ public class Axis extends JComponent {
 
 	private void drawDashLine() {
 		g2.setStroke(DASH_STROKE);
-		g2.setColor(Color.GRAY);
+		g2.setColor(DASH_LINE_COLOR);
 
 		Line2D.Double dashLine;
 		for (int i = 1; i < ticks.length; i++) {

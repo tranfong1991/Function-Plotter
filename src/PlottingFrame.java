@@ -9,6 +9,9 @@ import javax.swing.JPanel;
 import org.jfree.ui.OverlayLayout;
 
 public class PlottingFrame extends JPanel {
+	private final Color RECT_COLOR = Color.LIGHT_GRAY;
+	private final Color LINE_COLOR = Color.RED;
+	
 	private Graphics2D g2;
 	private Axis axisX;
 	private Axis axisY;
@@ -165,11 +168,11 @@ public class PlottingFrame extends JPanel {
 		super.paintComponent(g);
 		g2 = (Graphics2D) g;
 
-		g2.setColor(Color.LIGHT_GRAY);
+		g2.setColor(RECT_COLOR);
 		g2.fillRect(55, 30, (int) axisX.getAxisLength(),
 				(int) axisY.getAxisLength());
 
-		g2.setColor(Color.RED);
+		g2.setColor(LINE_COLOR);
 		for (int i = 0; i < lines.size(); i++) {
 			g2.draw(lines.get(i));
 		}
